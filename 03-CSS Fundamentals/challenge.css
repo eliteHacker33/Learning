@@ -23,6 +23,7 @@ body {
   border: solid 4px black;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 
 .strong-price {
@@ -93,4 +94,58 @@ body {
   background-color: white;
   color: black;
   border-top: 3px solid black;
+}
+
+article::before {
+  content: "Sale";
+  letter-spacing: 2px;
+  position: absolute;
+  background-color: red;
+  top: -15px;
+  left: -34px;
+  padding: 7px 15px;
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.color-container {
+  margin-bottom: 20px;
+}
+
+.color-container div {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.color-container div:first-child {
+  margin-left: 0px;
+}
+
+.first-color {
+  background-color: black;
+}
+
+.second-color {
+  background-color: blue;
+}
+
+.third-color {
+  background-color: red;
+}
+
+.fourth-color {
+  background-color: rgb(192, 192, 0);
+}
+
+.fifth-color {
+  background-color: rgb(10, 158, 10);
+}
+
+.sixth-color {
+  background-color: brown;
 }
