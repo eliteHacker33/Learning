@@ -114,10 +114,10 @@ li:last-child {
   font-style: italic;
 } */
 
-#author {
+/* #author {
   font-style: italic;
   font-size: 18px;
-}
+} */
 
 #copyright {
   font-size: 16px;
@@ -265,3 +265,29 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS */
+/* A way to think about FLOATS is that unlike absolute positioning (which means the element is free from all other elements
+A float casuses the rest of the elemets to "float"  around it*/
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-style: italic;
+  font-size: 18px;
+  /* padding-left: 80px; */
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
