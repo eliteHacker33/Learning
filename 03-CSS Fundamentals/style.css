@@ -1,18 +1,16 @@
 * {
-  /* Applies to every element, does not use inheritence */
-  /* useful if you want to apply a property to all elements that doesn't or would not get inherited otherwise*/
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
 }
 
-/* Page sections */
-
+/* PAGE SECTIONS */
 body {
-  /* Any style we put here gets inherited, so much different than universal selector */
   color: #444;
   font-family: sans-serif;
+
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -22,41 +20,45 @@ body {
   margin: 0 auto;
 }
 
-article {
-  margin-bottom: 60px;
-}
-
-nav {
-  font-size: 18px;
-}
-
-.header-style-main {
-  background-color: #9a9a9aa7;
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
 }
 
-.aside-related-post-style {
-  background-color: #9a9a9aa7;
-  border-top: 5px solid #007777;
-  border-bottom: 5px solid #007777;
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
   width: 500px;
 }
 
-.post-header {
-  margin-bottom: 40px;
-}
-
-/* Smaller elements */
-
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
-  color: rgb(8, 120, 128);
+  color: #1098ad;
 }
 
 h1 {
@@ -69,16 +71,19 @@ h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
+
 h3 {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 40px;
 }
+
 h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
+
 p {
   font-size: 22px;
   line-height: 1.5;
@@ -90,14 +95,24 @@ ol {
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
 li {
   font-size: 20px;
   margin-bottom: 10px;
   /* display: inline; */
 }
+
 li:last-child {
   margin-bottom: 0;
 }
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
 
 #author {
   font-style: italic;
@@ -106,7 +121,6 @@ li:last-child {
 
 #copyright {
   font-size: 16px;
-  font-family: sans-serif;
 }
 
 .related-author {
@@ -114,11 +128,19 @@ li:last-child {
   font-weight: bold;
 }
 
-.related-post {
+/* ul {
+  list-style: none;
+} */
+
+.related {
   list-style: none;
 }
 
-/* .first-li-bold {
+body {
+  /* background-color: orangered; */
+}
+
+/* .first-li {
   font-weight: bold;
 } */
 
@@ -130,37 +152,117 @@ li:last-child {
   font-style: italic;
 }
 
-li:nth-child(odd) {
+li:nth-child(even) {
   /* color: red; */
 }
 
-/* Psuedo classes are of the format element:psuedo-class{} */
-/* Misconception, won't work, was just to demonstrate */
+/* Misconception: this won't work! */
+article p:first-child {
+  color: red;
+}
 
-/* Will now be styling hyperlinks */
+/* Styling links */
 a:link {
-  color: #007777;
+  color: #1098ad;
   text-decoration: none;
 }
 
 a:visited {
-  color: #007777;
+  /* color: #777; */
+  color: #1098ad;
 }
 
 a:hover {
   color: orangered;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: underline orangered;
 }
 
 a:active {
-  color: greenyellow;
   background-color: black;
   font-style: italic;
 }
+/* LVHA */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  /* text-align: center; */
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #f5f508;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* h2 {
+
+} */
+
+/* h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+} */
 
 /* Resolving conflicts */
-
 /* #copyright {
   color: red;
 }
@@ -174,21 +276,10 @@ a:active {
 }
 
 footer p {
-  color: green;
+  color: green !important;
 } */
 
-.post-image {
-  width: 100%;
-  height: auto;
-  margin: 100px;
-}
-
-nav a:link {
-  margin-right: 30px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-nav a:link:last-child {
-  margin-right: 0;
-}
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
