@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product-title {
+  background-color: #e9e5e5;
+  text-align: center;
+  font-size: 22px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.product {
+  border: solid 4px black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  display: inline-block;
+}
+.shipping {
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgb(98, 98, 98);
+  /* margin-bottom: 25px; */
+  float: right;
+  margin-top: 6px;
+}
+
+.sales-line {
+  font-size: 13px;
+  color: black;
+  /* margin-bottom: 5px;
+  margin-top: 10px; */
+  clear: both;
+}
+
+/* should always specify all 4 states and in this order */
+.more-info-container {
+  margin-bottom: 30px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  font-size: 13px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.details-list {
+  font-size: 13px;
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  /* margin-bottom: none; */
+  margin-bottom: 10px;
+}
+
+.button-format {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+.button-format:hover {
+  background-color: white;
+  color: black;
+  border-top: 3px solid black;
+}
+
+article::before {
+  content: "Sale";
+  letter-spacing: 2px;
+  position: absolute;
+  background-color: red;
+  top: -15px;
+  left: -34px;
+  padding: 7px 15px;
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.color-container {
+  margin-bottom: 20px;
+}
+
+.color-container div {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.color-container div:first-child {
+  margin-left: 0px;
+}
+
+.first-color {
+  background-color: black;
+}
+
+.second-color {
+  background-color: blue;
+}
+
+.third-color {
+  background-color: red;
+}
+
+.fourth-color {
+  background-color: rgb(192, 192, 0);
+}
+
+.fifth-color {
+  background-color: rgb(10, 158, 10);
+}
+
+.sixth-color {
+  background-color: brown;
+}
+
+.product-info {
+  width: 243px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.product-details {
+  width: 243px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.shoe-image {
+  float: left;
+}
