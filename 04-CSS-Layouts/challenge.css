@@ -36,20 +36,32 @@ body {
 }
 .shipping {
   font-weight: bold;
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   color: rgb(98, 98, 98);
   /* margin-bottom: 25px; */
   float: right;
-  margin-top: 6px;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
-.sales-line {
-  font-size: 13px;
+.product-description {
+  /* font-size: 13px; */
   color: black;
   /* margin-bottom: 5px;
   margin-top: 10px; */
   clear: both;
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  /* background-color: red; */
 }
 
 /* should always specify all 4 states and in this order */
@@ -160,17 +172,17 @@ article::before {
 .product-info {
   width: 243px;
   float: left;
-  margin-left: 40px;
-  margin-top: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .product-details {
   width: 243px;
   float: left;
-  margin-left: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
-.shoe-image {
+.product-image {
   float: left;
+  margin-right: 40px;
 }
