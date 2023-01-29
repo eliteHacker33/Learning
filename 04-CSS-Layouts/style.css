@@ -198,7 +198,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -271,7 +271,7 @@ nav p {
 /* A way to think about FLOATS is that unlike absolute positioning (which means the element is free from all other elements
 A float casuses the rest of the elemets to "float"  around it*/
 
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -296,11 +296,11 @@ nav {
   clear: both;
 } */
 
-.clearfix::after {
+/* .clearfix::after {
   clear: both;
   content: "";
   display: block;
-}
+} */
 
 /* .basic-language-of-web{
   float: left;
@@ -310,7 +310,7 @@ nav {
   float: right;
 } */
 
-article {
+/* article {
   width: 825px;
   float: left;
 }
@@ -320,4 +320,65 @@ aside {
 }
 footer {
   clear: both;
+} */
+
+/*Flexbox*/
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.master-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
 }
