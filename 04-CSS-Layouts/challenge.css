@@ -173,7 +173,7 @@ article::before {
   /* width: 243px; */
   /* float: left; */
   margin-top: 20px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .product-image {
@@ -183,13 +183,13 @@ article::before {
   width: 250px;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: space-between;
   gap: 40px;
   /* align-content: space-between; */
-  /* align-content: space-between; */
-}
+/* align-content: space-between; */
+/*} */
 
 .product-price {
   display: flex;
@@ -197,4 +197,17 @@ article::before {
   align-items: center;
   margin-bottom: 20px;
   /* align-content: space-between; */
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+.product-title {
+  grid-column: 1 / -1;
+}
+
+.button-format {
+  grid-column: 1 / -1;
 }

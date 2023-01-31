@@ -50,6 +50,9 @@
         /* gap: 30px; */
         column-gap: 20px;
         row-gap: 40px;
+
+        /* only temporary */
+        display: none;
       }
 
       .el--8 {
@@ -59,23 +62,45 @@
       }
 
       .el--2 {
-        grid-column: 1 / 4;
-        grid-column: 1 / span 1;
+        /* grid-column: 1 / 4;
+        grid-column: 1 / span 1; */
+        grid-column: 1 / -1; /* spans the element all the way to the end, without having to figure out how  many columns */
         grid-row: 2 / 3;
       }
 
+      .el--6 {
+        /* grid-row: 3 / 5; */
+      }
+
       .container--2 {
-        display: none;
+        /* display: none; */
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* Aligning tracks inside container : distribute empty space */
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+
+        /* Aligning items inside of cells: moving items around inside the cells */
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
