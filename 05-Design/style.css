@@ -58,7 +58,7 @@ h2 {
   display: inline-block;
   font-weight: 500;
 
-  border-radius: 10px;
+  border-radius: 100px; /* just has to be more than the height */
 }
 
 .btn:hover,
@@ -74,6 +74,10 @@ btn:active {
 .btn--big {
   font-size: 18px;
   padding: 16px 32px;
+}
+
+img {
+  border-radius: 10px;
 }
 
 /* ------------------------ */
@@ -136,6 +140,7 @@ img {
   background-color: #087f5b;
   color: white;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -158,6 +163,11 @@ img {
 /* CHAIRS */
 .chair {
   box-shadow: 0px 30px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.chair img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .chair-box {
