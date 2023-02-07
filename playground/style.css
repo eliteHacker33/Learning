@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+}
+
+/* Navigation */
+
+.navigation-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  grid-template-rows: 1fr;
+  background-color: rgb(105, 171, 221);
+  align-items: center;
+  /* padding-top: 8px;
+  padding-bottom: 8px; */
+  height: 60px;
+  column-gap: 10px;
+  /* padding-top: 20px; */
+  margin-bottom: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.title-nav:link,
+.title-nav:visited {
+  /* display: grid; */
+  /* background-color: blue; */
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(1, 32, 56);
+  font-weight: 700;
+  font-size: 25px;
+  /* height: 100%; */
+
+  /* align-self: center;  */
+  /* padding-top: 20px; */
+}
+
+.title-nav:hover,
+.title-nav:hover {
+  /* box-shadow: 0px 10px 10px red; */
+}
+
+.search-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.vehicle-nav-item:link,
+.vehicle-nav-item:visited {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(1, 32, 56);
+  padding: 5px 5px;
+}
+
+.vehicle-nav-item:hover,
+.vehicle-nav-item:active {
+  background-color: rgb(136, 196, 242);
+  display: inline-block;
+
+  border-radius: 5px;
+}
+
+.account-nav:link,
+.account-nav:visited {
+  /* align-self: end; */
+  justify-self: end;
+  margin-right: 10px;
+  padding: 5px 5px;
+}
+
+.account-nav:hover,
+.account-nav:active {
+  background-color: rgb(136, 196, 242);
+  border-radius: 5px;
+  /* align-self: end; */
+  /* justify-self: end; */
+}
+
+/*icons */
+.account-icon {
+  height: 24px;
+  width: 24px;
+  stroke: rgb(1, 32, 56);
+}
+
+.marketplace-logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  stroke: rgb(1, 32, 56);
+  stroke-width: 16px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /* fill: rgb(1, 32, 56); */
+}
+
+/* Search container */
+
+.high-lvl-search-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 7px;
+  margin: 5px 5px;
+  background-color: gray;
+  height: 320px;
+  /* object-fit: contain; */
+}
+
+.quick-search-button {
+  /* display: inline-block; */
+  /* height: 20px; */
+  font-size: 20px;
+  width: 40px;
+}
+
+.quicksearch-image {
+  /* width: 100%; */
+  /* object-fit: contain; */
+}
+
+.quicksearch-input {
+  font-size: 20px;
+}
