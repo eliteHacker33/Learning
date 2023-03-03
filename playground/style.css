@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
+  background-color: bisque;
 }
 
 /* Navigation */
@@ -13,11 +14,11 @@
   display: grid;
   grid-template-columns: auto auto 1fr auto;
   grid-template-rows: 1fr;
-  background-color: rgb(105, 171, 221);
+  background-color: rgb(90, 80, 80);
   align-items: center;
   /* padding-top: 8px;
   padding-bottom: 8px; */
-  height: 60px;
+  min-height: 100px;
   column-gap: 10px;
   /* padding-top: 20px; */
   margin-bottom: 20px;
@@ -32,7 +33,7 @@
   font-family: sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(1, 32, 56);
+  color: rgb(247, 248, 248);
   font-weight: 700;
   font-size: 25px;
   /* height: 100%; */
@@ -104,30 +105,53 @@
 }
 
 /* Search container */
+.high-level-container {
+  /* width: 2000px; */
+  max-width: 2000px;
+  margin: 0 auto;
+}
 
-.high-lvl-search-container {
+.meat-and-potatoes {
+  padding-right: 35px;
+  margin-left: 40px;
+}
+
+.intro-about-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 0.5fr);
+  row-gap: 150px;
+  column-gap: 80px;
+  margin-top: 90px;
+  /* border-radius: 7px;
+  margin: 5px 5px; */
+  /* background-color: gray; */
+  /* height: 320px; */
+  /* object-fit: contain; */
+}
+
+.informational-image {
+  width: 400px;
+  /* object-fit: contain; */
+  height: 600px;
   border-radius: 7px;
-  margin: 5px 5px;
-  background-color: gray;
-  height: 320px;
-  /* object-fit: contain; */
-}
-
-.quick-search-button {
   /* display: inline-block; */
-  /* height: 20px; */
-  font-size: 20px;
-  width: 40px;
-}
-
-.quicksearch-image {
-  /* width: 100%; */
-  /* object-fit: contain; */
 }
 
 .quicksearch-input {
   font-size: 20px;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.schuler-motto {
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.business-overview {
+  line-height: 1.3;
 }
