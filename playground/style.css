@@ -120,8 +120,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   row-gap: 150px;
-  column-gap: 80px;
-  margin-top: 90px;
+  column-gap: 180px;
+  margin-top: 70px;
   /* border-radius: 7px;
   margin: 5px 5px; */
   /* background-color: gray; */
@@ -134,6 +134,7 @@ body {
   /* object-fit: contain; */
   height: 600px;
   border-radius: 7px;
+  align-self: end;
   /* display: inline-block; */
 }
 
@@ -149,7 +150,8 @@ body {
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -2px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .business-overview {
