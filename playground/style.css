@@ -108,6 +108,7 @@ body {
 .high-level-container {
   /* width: 2000px; */
   max-width: 2000px;
+  min-width: 2000px;
   margin: 0 auto;
 }
 
@@ -118,33 +119,45 @@ body {
 
 .intro-about-container {
   display: grid;
-  grid-template-columns: repeat(3, 0.33fr);
+  grid-template-columns: 1fr 1fr 0.6fr;
   row-gap: 150px;
-  column-gap: 60px;
+  column-gap: 50px;
   margin-top: 70px;
-  /* border-radius: 7px;
-  margin: 5px 5px; */
-  /* background-color: gray; */
-  /* height: 320px; */
-  /* object-fit: contain; */
+  margin-bottom: 150px;
 }
 
 .informational-image {
-  width: 400px;
+  width: 500px;
   /* object-fit: contain; */
-  height: 500px;
+  height: 600px;
   border-radius: 7px;
-  justify-self: end;
+  justify-self: center;
   /* display: inline-block; */
 }
 
 .informational-image-2 {
   width: 500px;
   /* object-fit: contain; */
-  height: 400px;
+  height: 300px;
   border-radius: 7px;
   justify-self: start;
   /* display: inline-block; */
+}
+
+.informational-image-3 {
+  width: 400px;
+  /* object-fit: contain; */
+  height: 300px;
+  border-radius: 7px;
+  justify-self: center;
+  /* display: inline-block; */
+}
+
+.double-image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  row-gap: 15px;
 }
 
 .quicksearch-input {
@@ -180,4 +193,23 @@ body {
 
 .visit-store:hover,
 .visit-store:active {
+}
+
+.special-holder {
+  text-align: center;
+}
+
+.what-makes-special {
+  display: inline-block;
+  margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  width: 50%;
+  background-color: rgb(90, 80, 80);
+  border-radius: 7px;
+  padding: 30px;
+  /* border: 1px solid black; */
+
+  /* par */
 }
