@@ -206,10 +206,16 @@ body {
   letter-spacing: -0.5px;
   text-align: center;
   width: 50%;
-  background-color: rgb(90, 80, 80);
-  border-radius: 7px;
-  padding: 30px;
+  /* background-color: rgb(90, 80, 80); */
+  /* border-radius: 7px; */
+  /* padding: 30px; */
   /* border: 1px solid black; */
 
   /* par */
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
 }
